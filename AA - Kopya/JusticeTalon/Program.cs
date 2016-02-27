@@ -2,6 +2,7 @@
 using EloBuddy;
 using EloBuddy.SDK;
 using EloBuddy.SDK.Events;
+using Mario_sGangplank.Ultilities;
 using Settings = JusticeTalon.Config.Modes.Combo;
 
 namespace JusticeTalon
@@ -32,6 +33,7 @@ namespace JusticeTalon
             Config.Initialize();
             SpellManager.Initialize();
             ModeManager.Initialize();
+            DamageIndicator.Init();
 
             // Listen to events we need
             Drawing.OnDraw += OnDraw;
@@ -48,8 +50,7 @@ namespace JusticeTalon
                 ModeManager.Useitems();
                 Orbwalker.ResetAutoAttack();
             }
-        }*/
-
+        kk}*/ 
         private static void Orbwalker_Post(AttackableUnit target, EventArgs args)
         {
             if (Orbwalker.ActiveModesFlags.HasFlag(Orbwalker.ActiveModes.Combo))

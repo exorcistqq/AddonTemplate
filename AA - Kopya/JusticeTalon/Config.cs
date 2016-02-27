@@ -38,6 +38,7 @@ namespace JusticeTalon
                 LaneClear.Initialize();
                 Harass.Initialize();
                 JungleClear.Initialize();
+                DrawDmg.Initialize();
             }
 
             public static void Initialize()
@@ -78,6 +79,39 @@ namespace JusticeTalon
                 public static bool UseR
                 {
                     get { return _useR.CurrentValue; }
+                }
+
+                public static void Initialize()
+                {
+                }
+            }
+            public static class DrawDmg
+            {
+                private static readonly CheckBox _damageDraw;
+                private static readonly CheckBox _perDraw;
+                private static readonly CheckBox _statDraw;
+
+                static DrawDmg()
+                {
+                    Menu.AddGroupLabel("DrawDmg");
+                    _damageDraw = Menu.Add("damageDraw", new CheckBox("damageDraw"));
+                    _perDraw = Menu.Add("perDraw", new CheckBox("perDraw"));
+                    _statDraw = Menu.Add("statDraw", new CheckBox("statDraw"));
+                }
+
+                public static bool damageDraw
+                {
+                    get { return _damageDraw.CurrentValue; }
+                }
+
+                public static bool perDraw
+                {
+                    get { return _perDraw.CurrentValue; }
+                }
+
+                public static bool statDraw
+                {
+                    get { return _statDraw.CurrentValue; }
                 }
 
                 public static void Initialize()
