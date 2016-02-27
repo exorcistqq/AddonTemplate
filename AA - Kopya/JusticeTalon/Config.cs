@@ -39,6 +39,7 @@ namespace JusticeTalon
                 Harass.Initialize();
                 JungleClear.Initialize();
                 DrawDmg.Initialize();
+                Skilldraws.Initialize();
             }
 
             public static void Initialize()
@@ -237,6 +238,29 @@ namespace JusticeTalon
                 {
                     get { return _mana.CurrentValue; }
                 }
+
+                public static void Initialize()
+                {
+                }
+            }
+            public static class Skilldraws
+            {
+                public const string GroupName = "SkillDraws";
+
+                /* private static readonly CheckBox _useQ;*/
+                private static readonly CheckBox _drawE;
+
+                static Skilldraws()
+                {
+                    Menu.AddGroupLabel("SkillDraws");
+                    _drawE = Menu.Add("DrawE", new CheckBox("DrawE"));
+                }
+
+                public static bool drawE
+                {
+                    get { return _drawE.CurrentValue; }
+                }
+
 
                 public static void Initialize()
                 {

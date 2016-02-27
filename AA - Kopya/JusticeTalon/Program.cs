@@ -2,7 +2,9 @@
 using EloBuddy;
 using EloBuddy.SDK;
 using EloBuddy.SDK.Events;
+using EloBuddy.SDK.Rendering;
 using Mario_sGangplank.Ultilities;
+using SharpDX;
 using Settings = JusticeTalon.Config.Modes.Combo;
 
 namespace JusticeTalon
@@ -87,6 +89,10 @@ namespace JusticeTalon
 
         private static void OnDraw(EventArgs args)
         {
+            if (Config.Modes.Skilldraws.drawE)
+            {
+                Circle.Draw(Color.AntiqueWhite, SpellManager.E.Range, Player.Instance.Position);
+            }
             // Draw range circles of our spells
             //Circle.Draw(Color.Red, SpellManager.Q.Range, Player.Instance.Position);
             // TODO: Uncomment if you want those enabled aswell, but remember to enable them
