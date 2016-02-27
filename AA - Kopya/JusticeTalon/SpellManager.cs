@@ -1,4 +1,5 @@
-﻿using EloBuddy;
+﻿using System.Collections.Generic;
+using EloBuddy;
 using EloBuddy.SDK;
 using EloBuddy.SDK.Enumerations;
 
@@ -21,7 +22,7 @@ namespace JusticeTalon
         public static Spell.Skillshot W { get; private set; }
         public static Spell.Targeted E { get; private set; }
         public static Spell.Active R { get; private set; }
-
+        
         public static void Initialize()
         {
         }
