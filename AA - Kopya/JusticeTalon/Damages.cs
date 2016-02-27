@@ -57,7 +57,7 @@ namespace JusticeTalon
             var ebendmg = tomlamskilldmg / 100;
             var kaynindmg = ebendmg*GetDamage(SpellSlot.E, target);
             var rektdmg = kaynindmg + tomlamskilldmg + Player.Instance.GetAutoAttackDamage(target) + Player.Instance.GetAutoAttackDamage(target);
-            var dmg = rektdmg*2;
+            var dmg = rektdmg;
             return dmg;
         }
 
