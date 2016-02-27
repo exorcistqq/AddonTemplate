@@ -1,1 +1,13 @@
 C:\Users\user\Desktop\AA\JusticeTalon\bin\Debug\AddonTemplate.exe.config
+C:\Users\user\Desktop\AA\JusticeTalon\bin\Debug\AddonTemplate.exe
+C:\Users\user\Desktop\AA\JusticeTalon\bin\Debug\AddonTemplate.pdb
+C:\Users\user\Desktop\AA\JusticeTalon\bin\Debug\EloBuddy.dll
+C:\Users\user\Desktop\AA\JusticeTalon\bin\Debug\EloBuddy.Sandbox.dll
+C:\Users\user\Desktop\AA\JusticeTalon\bin\Debug\EloBuddy.SDK.dll
+C:\Users\user\Desktop\AA\JusticeTalon\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\AA\JusticeTalon\bin\Debug\SharpDX.Direct3D9.dll
+C:\Users\user\Desktop\AA\JusticeTalon\bin\Debug\SharpDX.dll
+C:\Users\user\Desktop\AA\JusticeTalon\bin\Debug\SharpDX.XInput.dll
+C:\Users\user\Desktop\AA\JusticeTalon\obj\Debug\AddonTemplate.exe
+C:\Users\user\Desktop\AA\JusticeTalon\obj\Debug\AddonTemplate.pdb
+C:\Users\user\Desktop\AA\JusticeTalon\obj\Debug\JusticeTalon.csprojResolveAssemblyReference.cache
