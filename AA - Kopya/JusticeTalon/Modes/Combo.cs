@@ -22,33 +22,32 @@ namespace JusticeTalon.Modes
             if (dusman != null)
             {
                 ModeManager.Youmu();
-                if (Config.Modes.Combo.UseW && W.IsReady() && dusman.IsValidTarget(W.Range))
+                if (Settings.UseW && W.IsReady() && dusman.IsValidTarget(W.Range))
                 {
                     W.Cast(dusman);
                 }
-                if (Config.Modes.Combo.UseE && E.IsReady() && dusman.IsValidTarget(E.Range))
+                if (Settings.UseE && E.IsReady() && dusman.IsValidTarget(E.Range))
                 {
                     E.Cast(dusman);
                 }
-                if (Config.Modes.Combo.UseQ && R.IsReady() && dusman.IsValidTarget(R.Range))
+                if (Settings.UseQ && R.IsReady() && dusman.IsValidTarget(R.Range))
                 {
                     Player.IssueOrder(GameObjectOrder.AttackUnit, dusman);
                 }
-                if (Config.Modes.Combo.UseQ && Q.IsReady() && dusman.IsValidTarget(Q.Range))
+                if (Settings.UseQ && Q.IsReady() && dusman.IsValidTarget(Q.Range))
                 {
                     Player.IssueOrder(GameObjectOrder.AttackUnit, dusman);
                 }
-                ModeManager.Useitems();
-                //Remember first to check bools then other things this is the correct way
-                if (Config.Modes.Combo.UseR && R.IsReady() && dusman.IsValidTarget(R.Range))
+                if (Config.Modes.ItemUsage.itemusage)
+                {
+                    ModeManager.Useitems();
+                }
+                if (Settings.UseR && R.IsReady() && dusman.IsValidTarget(R.Range))
                 {
                     R.Cast();
                     Core.DelayAction(() => R.Cast(), 88);
                 }
                 Player.IssueOrder(GameObjectOrder.AttackUnit, dusman);
-
-
-
             }
         }
     }

@@ -21,6 +21,9 @@ namespace JusticeTalon.Modes
                 if (Config.Modes.Harass.UseW && W.IsReady() && harassdusman.IsValidTarget(W.Range))
                 {
                     W.Cast(harassdusman);
+                }
+                if (Config.Modes.ItemUsage.itemusage)
+                {
                     ModeManager.Useitems();
                 }
             }

@@ -40,6 +40,7 @@ namespace JusticeTalon
                 JungleClear.Initialize();
                 DrawDmg.Initialize();
                 Skilldraws.Initialize();
+                ItemUsage.Initialize();
             }
 
             public static void Initialize()
@@ -259,6 +260,29 @@ namespace JusticeTalon
                 public static bool drawE
                 {
                     get { return _drawE.CurrentValue; }
+                }
+
+
+                public static void Initialize()
+                {
+                }
+            }
+            public static class ItemUsage
+            {
+                public const string GroupName = "ItemUsage";
+
+                /* private static readonly CheckBox _useQ;*/
+                private static readonly CheckBox _ItemUsage;
+
+                static ItemUsage()
+                {
+                    Menu.AddGroupLabel("ItemUsage");
+                    _ItemUsage = Menu.Add("ItemUsage", new CheckBox("ItemUsage"));
+                }
+
+                public static bool itemusage
+                {
+                    get { return _ItemUsage.CurrentValue; }
                 }
 
 
